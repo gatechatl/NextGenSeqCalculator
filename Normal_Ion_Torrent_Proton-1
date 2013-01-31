@@ -1,0 +1,2 @@
+Platform,Model,Available,Cost,Unit,Chemistry & read settings,reads,length,bp,genome size (bp),Total x coverage,# of samples,X coverage per sample
+Ion_Torrent,Proton-1,late_2012,$1000_,run,,50000000,180,9000000000,1.0E9,9.0,1.0,9.0

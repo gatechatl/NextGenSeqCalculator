@@ -1,0 +1,348 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>NextGen Sequencing Calculators</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="ico/favicon.png">
+  </head>
+
+  <body>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+
+    <script src='js/jquery-1.7.2.min.js' type='text/javascript'></script>
+    <script src='js/jquery.csv2table-0.02-b-4.1.js' type='text/javascript' charset='utf-8'></script>
+
+<script>
+$(function(){
+//  $('#view0').csv2table('./distance.csv');
+});
+
+    function setVisible(id, visible) {
+        var o = document.getElementById(id);
+        if (typeof(o) != 'undefined') o.style.visibility = visible ? 'visible' : 'hidden';
+        if (typeof(o) == 'undefined') alert("Element with id '" + id + "' not found.");
+
+    }
+
+    function setDisplay(id, visible) {
+        var o = document.getElementById(id);
+        if (typeof(o) != 'undefined') o.style.display = visible ? 'block' : 'none';
+        if (typeof(o) == 'undefined') alert("Element with id '" + id + "' not found.");
+    }
+
+    function setDisabled(id, visible) {
+        var o = document.getElementById(id);
+        if (typeof(o) != 'undefined') o.disabled = visible ? '' : 'disabled';
+        if (typeof(o) == 'undefined') alert("Element with id '" + id + "' not found.");
+    }
+
+</script>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">NextGen Sequencing Calculator</a>
+          <div class="nav-collapse collapse">
+            <p class="navbar-text pull-right">
+              <!--Logged in as <a href="#" class="navbar-link">Username</a>-->
+            </p>
+            <ul class="nav">
+              <li ><a href="index.html">Home</a></li>
+              <li class="active"><a href="GeneralCoverage.html">General Coverage</a></li>
+              <li><a href="#about">Sequence Capture</a></li>
+              <li><a href="#about">Metagenome Coverage</a></li>
+              <li><a href="#about">Primer Tagginator</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header">Sidebar</li>
+              <li><a href="index.html">Home</a></li>
+              <li class="active"><a href="GeneralCoverage.html">Coverage Estimator</a></li>
+              <li><a href="#">Sequence Capture Calculator</a></li>
+              <li><a href="#">Metagenome Coverage Calculator</a></li>
+              <li><a href="#">Primer Tagginator</a></li>
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+        <div class="span9">
+          <div class="hero-unit">
+            <h1>General Coverage Calculator</h1> <br />
+            <p>To help researcher design their next generation sequencing experiments, we provide a series of tools to estimate the coverage, cost, and trade off between different experimental protocols.</p>
+
+<br />
+
+
+<table style="text-align: left; width: 500px; height: 60px;" border="0"
+cellpadding="2" cellspacing="2">
+<tbody>
+
+<tr>
+<td width=35%  style="vertical-align: top;">
+
+<p>Input Genome Size: </p>
+</td>
+<!--                        <script type="text/javascript">
+                            var hb1 = new HelpBalloon({
+                            title: 'Input Trees',
+                            content: 'The input gene trees must be bifurcating rooted trees (w/o branch lengths) in Newick format, for examples, the ML trees generated from PHYML, RAXML, or PHYLIP and rooted with the outgroup species.',
+                            autoHideTimeout: 2000
+                            });
+                        </script>
+-->
+<td style="vertical-align: top;">
+<input type="text" id="genomesize" name="genomesize" value="1000000000" maxlength="18" size="18"><br />
+</td>
+</tr>
+
+<tr >
+<td width=35% style="vertical-align: top;">
+<p>Input # of Samples: </p>
+</td>
+
+<td style="vertical-align: top;">
+<input type="text" id="samplesize" name="samplesize" value="1" maxlength="3" size="3"><br />
+</td>
+
+</tr>
+
+</tbody>
+</table>
+
+
+                    
+                
+            <p><a class="btn btn-primary btn-large" onclick="return OnButton1();">Calculate Me &raquo;</a></p>
+             <div id='tables' style="display: none">
+               <div id='view0'></div><br />
+               <div id='view1'></div><br />
+               <div id='view2'></div><br />
+               <div id='view3'></div><br />
+               <div id='view4'></div><br />
+               <div id='view5'></div><br />
+               <div id='view6'></div><br />
+               <div id='view7'></div><br />
+               <div id='view8'></div><br />
+               <div id='view9'></div><br />
+               <div id='view10'></div><br />
+               <div id='view11'></div><br />
+               Single sample of genomic DNA <br />
+               <div id='view12'></div><br />
+Single sample other than genomic or multi-MID genomic<br />
+               <div id='view13'></div><br />
+Multi-MID with other than genomic<br />
+               <div id='view14'></div><br />
+Single sample of genomic DNA<br />
+               <div id='view15'></div><br />
+Single sample other than genomic or multi-MID genomic<br />
+               <div id='view16'></div><br />
+Multi-MID with other than genomic<br />
+               <div id='view17'></div><br />
+            </div>
+          </div>
+          <div >
+            
+
+
+          </div>
+          <!--<div class="row-fluid">
+            <div class="span4">
+              <h2>Coverage Estimator</h2>
+              <p>Information about Coverage Estimator</p>
+              <p><a class="btn" href="#">View details &raquo;</a></p>
+            </div>
+            <div class="span4">
+              <h2>Sequence Capture Calculator</h2>
+              <p>General Description about Sequence Capture Calculator. </p>
+              <p><a class="btn" href="#">View details &raquo;</a></p>
+            </div>
+            <div class="span4">
+              <h2>Metagenome Coverage Calculator</h2>
+              <p>Description for Metagenome coverage calculator. </p>
+              <p><a class="btn" href="#">View details &raquo;</a></p>
+            </div>
+          </div>--><!--/row-->
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <p>&copy; Company 2012</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+<!--    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>-->
+
+  </body>
+</html>
+<script language="Javascript">
+<!--
+var bash_exit_code = 0;
+function test() {};
+function OnButton1()
+{
+  var genomesize = document.getElementById("genomesize").value;
+  var genomesample = document.getElementById("samplesize").value;
+
+  $.get("test.php", {size: genomesize, sample: genomesample});
+  window.alert('Processing Query \nGenomeSize: ' + genomesize + ' \nNumber of Samples: ' + genomesample);
+  setDisplay('tables', true);
+  //writeFile("file", "what");
+  /*<?php 
+
+     $file = fopen("file", "w");
+     fwrite($file, "hello world");
+     fclose($file);
+
+  ?>*/
+  //bash("sh test.sh");        
+
+/*Normal_GridION
+Multi-MID_with_other_than_genomic_454
+Normal_Illumina
+Normal_Ion_Torrent
+Normal_minION
+Single_sample_of_genomic_DNA_454
+Single_sample_other_than_genomic_or_multi-MID_genomic_454*/
+
+  $('#view0').csv2table('./Normal_Illumina_HiSeq_2000');
+  $('#view1').csv2table('./Normal_Illumina_2500_fast_flow_cell');
+  $('#view2').csv2table('./Normal_Illumina_MiSeq');
+  $('#view3').csv2table('./Normal_Illumina_MiSeq-upgraded');
+  $('#view4').csv2table('./Normal_Ion_Torrent_314');
+  $('#view5').csv2table('./Normal_Ion_Torrent_316');
+  $('#view6').csv2table('./Normal_Ion_Torrent_318');
+  $('#view7').csv2table('./Normal_Ion_Torrent_Proton-1');
+  $('#view8').csv2table('./Normal_Ion_Torrent_Proton-2');
+  $('#view9').csv2table('./Normal_minION_-');
+  $('#view10').csv2table('./Normal_GridION_2000');
+  $('#view11').csv2table('./Normal_GridION_8000');
+  $('#view12').csv2table('./Single_sample_of_genomic_DNA_454_FLX');
+  $('#view13').csv2table('./Single_sample_of_genomic_DNA_454_FLXPlus');
+  $('#view14').csv2table('./Single_sample_other_than_genomic_or_multi-MID_genomic_454_FLX');
+  $('#view15').csv2table('./Single_sample_other_than_genomic_or_multi-MID_genomic_454_FLXPlus');
+  $('#view16').csv2table('./Multi-MID_with_other_than_genomic_454_FLX');
+  $('#view17').csv2table('./Multi-MID_with_other_than_genomic_454_FLXPlus');
+
+  /*$('#view1').csv2table('./Normal_GridION');
+  $('#view2').csv2table('./Normal_Ion_Torrent');
+  $('#view3').csv2table('./Normal_minION');
+  $('#view4').csv2table('./Single_sample_of_genomic_DNA_454');
+  $('#view5').csv2table('./Single_sample_other_than_genomic_or_multi-MID_genomic_454');
+  $('#view6').csv2table('./Multi-MID_with_other_than_genomic_454');*/
+        //window.alert('For Input Gene Trees, please select a gene tree file or text file.');
+       
+ 
+    /*var file = document.getElementById("uploadfilegenetree");
+    var text = document.getElementById("geneTreeText");
+
+    if ((file.value != "" && !file.disabled) || !text.disabled) {
+        document.input.action="STAR/runSTAR.php"
+        document.input.submit();
+    } else {
+        window.alert('For Input Gene Trees, please select a gene tree file or text file.');
+
+    }*/
+}
+function writeFile(filename,filecontent){
+var fso, f, s ;
+fso = new ActiveXObject("Scripting.FileSystemObject");
+f = fso.OpenTextFile(filename,8,true);
+f.WriteLine(filecontent);
+f.Close();
+alert('ok');
+}
+
+function bash(command)
+{
+  var c;           // a character of the shell's stdout stream
+  var retval = "";          // the return value is the stdout of the shell
+
+  var rt = Runtime.getRuntime();        // get current runTime object
+  var shell = rt.exec("bash -c '" + command + "'");   // start the shell
+  var shellIn = shell.getInputStream();        // this captures the output from the command
+
+  while ((c = shellIn.read()) != -1)        // loop to capture shell's stdout
+    {
+      retval += String.fromCharCode(c);        // one character at a time
+    }
+
+  bash_exit_code = shell.waitFor();        // wait for the shell to finish and get the return code
+
+  shellIn.close();          // close the shell's output stream
+
+  return retval;
+}
+
+-->
+</script>
