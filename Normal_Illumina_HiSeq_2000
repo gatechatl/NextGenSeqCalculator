@@ -1,5 +1,0 @@
-Platform,Model,Available,Cost,Unit,Chemistry & read settings,reads,length,bp,genome size (bp),Total x coverage,# of samples,X coverage per sample
-Illumina,HiSeq_2000,now,$2000_,lane,v3_PE100;_insert_=_180,150000000,180,27000000000,1.0E9,27.0,1.0,27.0
-Illumina,HiSeq_2000,now,$2000_,lane,v3_PE100;_insert_>200,150000000,200,30000000000,1.0E9,30.0,1.0,30.0
-Illumina,HiSeq_2000,now,$2000_,lane,v3_PE100;_insert_=_160,150000000,160,24000000000,1.0E9,24.0,1.0,24.0
-Illumina,HiSeq_2000,now,$2000_,lane,v3_PE100;_insert_>200,150000000,170,25500000000,1.0E9,25.5,1.0,25.5

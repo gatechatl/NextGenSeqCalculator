@@ -1,6 +1,0 @@
-Platform,Model,Available,Cost,Unit,Chemistry & read settings,reads,length,bp,genome size (bp),Total x coverage,# of samples,X coverage per sample
-454,FLX,now,$10750 ,Full,Titanium,700.0K,400,280.0Mbp,1.0Gbp,0.28,1.0,0.28
-454,FLX,now,$6650 ,half,Titanium,350.0K,400,140.0Mbp,1.0Gbp,0.14,1.0,0.14
-454,FLX,now,$4000 ,quarter,Titanium,125.0K,400,50.0Mbp,1.0Gbp,0.05,1.0,0.05
-454,FLX,now,$2000 ,eighth,Titanium,50.0K,400,20.0Mbp,1.0Gbp,0.02,1.0,0.02
-454,FLX,now,$1000 ,spike-in,Titanium,10.0K,400,4.0Mbp,1.0Gbp,0.0040,1.0,0.0040

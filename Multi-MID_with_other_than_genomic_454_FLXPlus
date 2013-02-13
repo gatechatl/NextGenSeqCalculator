@@ -1,6 +1,0 @@
-Platform,Model,Available,Cost,Unit,Chemistry & read settings,reads,length,bp,genome size (bp),Total x coverage,# of samples,X coverage per sample
-454,FLX+,now,$10750_,Full,FLX+,700000,550,385000000,1.0E9,0.385,1.0,0.385
-454,FLX+,now,$6650_,half,FLX+,350000,550,192500000,1.0E9,0.1925,1.0,0.1925
-454,FLX+,now,$4000_,quarter,FLX+,125000,550,68750000,1.0E9,0.06875,1.0,0.06875
-454,FLX+,now,$2000_,eighth,FLX+,50000,550,27500000,1.0E9,0.0275,1.0,0.0275
-454,FLX+,now,$1000_,spike-in,FLX+,10000,550,5500000,1.0E9,0.0055,1.0,0.0055

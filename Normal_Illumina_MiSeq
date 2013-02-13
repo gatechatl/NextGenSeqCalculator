@@ -1,3 +1,0 @@
-Platform,Model,Available,Cost,Unit,Chemistry & read settings,reads,length,bp,genome size (bp),Total x coverage,# of samples,X coverage per sample
-Illumina,MiSeq,now,$1000_,run,PE150;_insert_=_280,5000000,280,1400000000,1.0E9,1.4,1.0,1.4
-Illumina,MiSeq,now,$1000_,run,PE150;_insert_>300,5000000,300,1500000000,1.0E9,1.5,1.0,1.5
