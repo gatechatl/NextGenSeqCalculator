@@ -13,6 +13,7 @@ Normal3	Ion_Torrent	316	March	$750_	run		1000000	210	210000000
 Normal3	Ion_Torrent	318	March	$1000_	run		5000000	120	600000000
 Normal4	Ion_Torrent	Proton-1	late_2012	$1000_	run		50000000	180	9000000000
 Normal4	Ion_Torrent	Proton-2	early_2013	$1000_	run		250000000	180	45000000000
+Normal4	Ion_Torrent	Proton-3	late_2013	$0	run	0	0	0	0
 Normal5	minION	-	late_2012	$1000_	device		50000	20000	1000000000
 Normal5	GridION	2000	late_2012	$1000_	yield?		500000	20000	10000000000
 Normal5	GridION	8000	2013	$1000_	yield?		5000000	20000	100000000000
