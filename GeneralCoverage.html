@@ -106,7 +106,7 @@ $(function(){
 
     <div class="container-fluid">
       <div class="row-fluid">
-        <div class="span3">
+<!--        <div class="span3">
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
               <li class="nav-header">Sidebar</li>
@@ -116,12 +116,12 @@ $(function(){
               <li><a href="#">Metagenome Coverage Calculator</a></li>
               <li><a href="#">Primer Tagginator</a></li>
             </ul>
-          </div><!--/.well -->
-        </div><!--/span-->
-        <div class="span9">
+          </div>
+        </div>-->
+        <div class="span12">
           <div class="hero-unit">
             <h1>General Coverage Calculator</h1> <br />
-            <p>To help researcher design their next generation sequencing experiments, we provide a series of tools to estimate the coverage, cost, and trade off between different experimental protocols.</p>
+            <p>We provide a set of estimates to help researchers identify the expected sequence depth that should be achieved on all commercially available next-generation DNA sequencers.  The number of reads and read depth are guidelines.  We have tried to use realistic and regularly achievable results, but your mileage may vary.</p>
 
 <br />
 
@@ -144,7 +144,7 @@ cellpadding="2" cellspacing="2">
                         </script>
 -->
 <td style="vertical-align: top;">
-<input type="text" id="genomesize" name="genomesize" value="1000000000" maxlength="18" size="18"><br />
+<input type="text" id="genomesize" name="genomesize" value="1,000,000,000" maxlength="18" size="18"><br />
 </td>
 </tr>
 
@@ -172,13 +172,13 @@ cellpadding="2" cellspacing="2">
                <div id='view2'></div><br />
                <div id='view3'></div><br />
                <div id='view4'></div><br />
-               <div id='view5'></div><br />
+              <!-- <div id='view5'></div><br />
                <div id='view6'></div><br />
                <div id='view7'></div><br />
                <div id='view8'></div><br />
                <div id='view9'></div><br />
                <div id='view10'></div><br />
-               <div id='view11'></div><br />
+               <div id='view11'></div><br />-->
                Single sample of genomic DNA <br />
                <div id='view12'></div><br />
 Single sample other than genomic or multi-MID genomic<br />
@@ -242,21 +242,36 @@ Multi-MID with other than genomic<br />
     <script src="js/bootstrap-collapse.js"></script>
     <script src="js/bootstrap-carousel.js"></script>
     <script src="js/bootstrap-typeahead.js"></script>-->
-
   </body>
 </html>
 <script language="Javascript">
 <!--
 var bash_exit_code = 0;
 function test() {};
+
+function sleep(milliseconds) {
+  var start = new Date().getTime();
+  for (var i = 0; i < 1e7; i++) {
+    if ((new Date().getTime() - start) > milliseconds){
+      break;
+    }
+  }
+}
+
 function OnButton1()
 {
   var genomesize = document.getElementById("genomesize").value;
   var genomesample = document.getElementById("samplesize").value;
+  //genomesize = genomesize.replace(",", "");
+  $.get("test.php", {size: genomesize, sample: genomesample}, function(data) {
 
-  $.get("test.php", {size: genomesize, sample: genomesample});
-  window.alert('Processing Query \nGenomeSize: ' + genomesize + ' \nNumber of Samples: ' + genomesample);
+  });
+  var al = window.alert('Processing Query \nGenomeSize: ' + genomesize + ' \nNumber of Samples: ' + genomesample); 
   setDisplay('tables', true);
+
+  
+
+  //window.alert('Processing Query \nGenomeSize: ' + genomesize + ' \nNumber of Samples: ' + genomesample);
   //writeFile("file", "what");
   /*<?php 
 
@@ -275,6 +290,7 @@ Normal_minION
 Single_sample_of_genomic_DNA_454
 Single_sample_other_than_genomic_or_multi-MID_genomic_454*/
 
+/*
   $('#view0').csv2table('./Normal_Illumina_HiSeq_2000');
   $('#view1').csv2table('./Normal_Illumina_2500_fast_flow_cell');
   $('#view2').csv2table('./Normal_Illumina_MiSeq');
@@ -287,12 +303,20 @@ Single_sample_other_than_genomic_or_multi-MID_genomic_454*/
   $('#view9').csv2table('./Normal_minION_-');
   $('#view10').csv2table('./Normal_GridION_2000');
   $('#view11').csv2table('./Normal_GridION_8000');
-  $('#view12').csv2table('./Single_sample_of_genomic_DNA_454_FLX');
-  $('#view13').csv2table('./Single_sample_of_genomic_DNA_454_FLXPlus');
-  $('#view14').csv2table('./Single_sample_other_than_genomic_or_multi-MID_genomic_454_FLX');
-  $('#view15').csv2table('./Single_sample_other_than_genomic_or_multi-MID_genomic_454_FLXPlus');
-  $('#view16').csv2table('./Multi-MID_with_other_than_genomic_454_FLX');
-  $('#view17').csv2table('./Multi-MID_with_other_than_genomic_454_FLXPlus');
+*/
+  $('#view0').csv2table('./Normal1_Illumina_HiSeq_2000');
+  $('#view1').csv2table('./Normal2_Illumina_MiSeq');  
+  $('#view2').csv2table('./Normal3_Ion_Torrent_314');  
+  $('#view3').csv2table('./Normal4_Ion_Torrent_Proton-1');  
+  $('#view4').csv2table('./Normal5_minION_-');
+  $('#view12').csv2table('./Single_sample_of_genomic_DNA1_454_FLX');
+  $('#view13').csv2table('./Single_sample_of_genomic_DNA2_454_FLXPlus');
+  $('#view14').csv2table('./Single_sample_other_than_genomic_or_multi-MID_genomic1_454_FLX');
+  $('#view15').csv2table('./Single_sample_other_than_genomic_or_multi-MID_genomic2_454_FLXPlus');
+  $('#view16').csv2table('./Multi-MID_with_other_than_genomic1_454_FLX');
+  $('#view17').csv2table('./Multi-MID_with_other_than_genomic2_454_FLXPlus');
+
+
 
   /*$('#view1').csv2table('./Normal_GridION');
   $('#view2').csv2table('./Normal_Ion_Torrent');

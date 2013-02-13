@@ -1,0 +1,4 @@
+Platform,Model,Available,Cost,Unit,Chemistry & read settings,reads,length,bp,genome size (bp),Total x coverage,# of samples,X coverage per sample
+Ion Torrent,314,March,$500 ,run,,200.0K,210,42.0Mbp,1.0Gbp,0.042,1.0,0.042
+Ion Torrent,316,March,$750 ,run,,1.0M,210,210.0Mbp,1.0Gbp,0.21,1.0,0.21
+Ion Torrent,318,March,$1000 ,run,,5.0M,120,600.0Mbp,1.0Gbp,0.6,1.0,0.6

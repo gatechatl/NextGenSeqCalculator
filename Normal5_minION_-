@@ -1,0 +1,4 @@
+Platform,Model,Available,Cost,Unit,Chemistry & read settings,reads,length,bp,genome size (bp),Total x coverage,# of samples,X coverage per sample
+minION,-,late 2012,$1000 ,device,,50.0K,20000,1.0Gbp,1.0Gbp,1.0,1.0,1.0
+GridION,2000,late 2012,$1000 ,yield?,,500.0K,20000,10.0Gbp,1.0Gbp,10.0,1.0,10.0
+GridION,8000,2013,$1000 ,yield?,,5.0M,20000,100.0Gbp,1.0Gbp,100.0,1.0,100.0

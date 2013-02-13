@@ -1,0 +1,48 @@
+Normal1	Illumina	HiSeq_2000	now	$2000_	lane	v3_PE100;_insert_=_180	150M	180	27Gbp
+Normal1	Illumina	HiSeq_2000	now	$2000_	lane	v3_PE100;_insert_= 170	150M	200	30Gbp
+Normal1	Illumina	HiSeq_2000	now	$2000_	lane	v3_PE100;_insert_=_160	150M	160	24Gbp
+Normal1	Illumina	HiSeq_2000	now	$2000_	lane	v3_PE100;_insert_>200	150M	170	25.5Gbp
+Normal1	Illumina	2500_fast_flow_cell	late_2012	?	run	v4_PE150;_insert_=_280	150M	280	42Gbp
+Normal1	Illumina	2500_fast_flow_cell	late_2012	?	run	v4_PE150;_insert_>300	150M	300	45Gbp
+Normal2	Illumina	MiSeq	version 1	$1000_	run	PE150;_insert_=_280	5M	280	1.4Gbp
+Normal2	Illumina	MiSeq	version 1	$1000_	run	PE150;_insert_>300	5M	300	1.5Gbp
+Normal2	Illumina	MiSeq-upgraded	version 2	$1200_	run	PE250;_insert_=_450	15M	450	6.75Gbp
+Normal2	Illumina	MiSeq-upgraded	version 2	$1200_	run	PE250;_insert_>500	15M	500	7.5Gbp
+Normal3	Ion_Torrent	314	March	$500_	run		200K	210	42Mbp
+Normal3	Ion_Torrent	316	March	$750_	run		1M	210	210Mbp
+Normal3	Ion_Torrent	318	March	$1000_	run		5M	120	600Mbp
+Normal4	Ion_Torrent	Proton-1	late_2012	$1000_	run		50M	180	9Gbp
+Normal4	Ion_Torrent	Proton-2	early_2013	$1000_	run		250M	180	45Gbp
+Normal5	minION	-	late_2012	$1000_	device		50K	20000	1Gbp
+Normal5	GridION	2000	late_2012	$1000_	yield?		500K	20000	10Gbp
+Normal5	GridION	8000	2013	$1000_	yield?		5M	20000	100Gbp
+Single_sample_of_genomic_DNA1	454	FLX	now	$10750_	Full	Titanium	900K	400	360Mbp
+Single_sample_of_genomic_DNA1	454	FLX	now	$6650_	half	Titanium	450K	400	180Mbp
+Single_sample_of_genomic_DNA1	454	FLX	now	$4000_	quarter	Titanium	180K	400	72Mbp
+Single_sample_of_genomic_DNA1	454	FLX	now	$2000_	eighth	Titanium	100K	400	40Mbp
+Single_sample_of_genomic_DNA1	454	FLX	now	$1000_	spike-in	Titanium	10K	400	4Mbp
+Single_sample_other_than_genomic_or_multi-MID_genomic1	454	FLX	now	$10750_	Full	Titanium	800K	400	320Mbp
+Single_sample_other_than_genomic_or_multi-MID_genomic1	454	FLX	now	$6650_	half	Titanium	400K	400	160Mbp
+Single_sample_other_than_genomic_or_multi-MID_genomic1	454	FLX	now	$4000_	quarter	Titanium	150K	400	60Mbp
+Single_sample_other_than_genomic_or_multi-MID_genomic1	454	FLX	now	$2000_	eighth	Titanium	75K	400	30Mbp
+Single_sample_other_than_genomic_or_multi-MID_genomic1	454	FLX	now	$1000_	spike-in	Titanium	10K	400	4Mbp
+Multi-MID_with_other_than_genomic1	454	FLX	now	$10750_	Full	Titanium	700K	400	280Mbp
+Multi-MID_with_other_than_genomic1	454	FLX	now	$6650_	half	Titanium	350K	400	140Mbp
+Multi-MID_with_other_than_genomic1	454	FLX	now	$4000_	quarter	Titanium	125K	400	50Mbp
+Multi-MID_with_other_than_genomic1	454	FLX	now	$2000_	eighth	Titanium	50K	400	20Mbp
+Multi-MID_with_other_than_genomic1	454	FLX	now	$1000_	spike-in	Titanium	10K	400	4Mbp
+Single_sample_of_genomic_DNA2	454	FLX+	now	$10750_	Full	FLX+	900K	550	495Mbp
+Single_sample_of_genomic_DNA2	454	FLX+	now	$6650_	half	FLX+	450K	550	247.5Mbp
+Single_sample_of_genomic_DNA2	454	FLX+	now	$4000_	quarter	FLX+	180K	550	99Mbp
+Single_sample_of_genomic_DNA2	454	FLX+	now	$2000_	eighth	FLX+	100K	550	55Mbp
+Single_sample_of_genomic_DNA2	454	FLX+	now	$1000_	spike-in	FLX+	10000	550	5.5Mbp
+Single_sample_other_than_genomic_or_multi-MID_genomic2	454	FLX+	now	$10750_	Full	FLX+	800K	550	440Mbp
+Single_sample_other_than_genomic_or_multi-MID_genomic2	454	FLX+	now	$6650_	half	FLX+	400K	550	220Mbp
+Single_sample_other_than_genomic_or_multi-MID_genomic2	454	FLX+	now	$4000_	quarter	FLX+	150K	550	82.5Mbp
+Single_sample_other_than_genomic_or_multi-MID_genomic2	454	FLX+	now	$2000_	eighth	FLX+	75K	550	41.25Mbp
+Single_sample_other_than_genomic_or_multi-MID_genomic2	454	FLX+	now	$1000_	spike-in	FLX+	10K	550	5.5Mbp
+Multi-MID_with_other_than_genomic2	454	FLX+	now	$10750_	Full	FLX+	700K	550	385Mbp
+Multi-MID_with_other_than_genomic2	454	FLX+	now	$6650_	half	FLX+	350K	550	192.5Mbp
+Multi-MID_with_other_than_genomic2	454	FLX+	now	$4000_	quarter	FLX+	125K	550	68.75Mbp
+Multi-MID_with_other_than_genomic2	454	FLX+	now	$2000_	eighth	FLX+	50K	550	27.5Mbp
+Multi-MID_with_other_than_genomic2	454	FLX+	now	$1000_	spike-in	FLX+	10K	550	5.5Mbp

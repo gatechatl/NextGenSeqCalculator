@@ -1,48 +1,48 @@
-Normal	Illumina	HiSeq_2000	now	$2000_	lane	v3_PE100;_insert_=_180	150000000	180	27000000000
-Normal	Illumina	HiSeq_2000	now	$2000_	lane	v3_PE100;_insert_>200	150000000	200	30000000000
-Normal	Illumina	HiSeq_2000	now	$2000_	lane	v3_PE100;_insert_=_160	150000000	160	24000000000
-Normal	Illumina	HiSeq_2000	now	$2000_	lane	v3_PE100;_insert_>200	150000000	170	25500000000
-Normal	Illumina	2500_fast_flow_cell	late_2012	?	run	v4_PE150;_insert_=_280	150000000	280	42000000000
-Normal	Illumina	2500_fast_flow_cell	late_2012	?	run	v4_PE150;_insert_>300	150000000	300	45000000000
-Normal	Illumina	MiSeq	now	$1000_	run	PE150;_insert_=_280	5000000	280	1400000000
-Normal	Illumina	MiSeq	now	$1000_	run	PE150;_insert_>300	5000000	300	1500000000
-Normal	Illumina	MiSeq-upgraded	now/soon	$1200_	run	PE250;_insert_=_450	15000000	450	6750000000
-Normal	Illumina	MiSeq-upgraded	now/soon	$1200_	run	PE250;_insert_>500	15000000	500	7500000000
-Normal	Ion_Torrent	314	March	$500_	run		200000	210	42000000
-Normal	Ion_Torrent	316	March	$750_	run		1000000	210	210000000
-Normal	Ion_Torrent	318	March	$1000_	run		5000000	120	600000000
-Normal	Ion_Torrent	Proton-1	late_2012	$1000_	run		50000000	180	9000000000
-Normal	Ion_Torrent	Proton-2	early_2013	$1000_	run		250000000	180	45000000000
-Normal	minION	-	late_2012	$1000_	device		50000	20000	1000000000
-Normal	GridION	2000	late_2012	$1000_	yield?		500000	20000	10000000000
-Normal	GridION	8000	2013	$1000_	yield?		5000000	20000	100000000000
-Single_sample_of_genomic_DNA	454	FLX	now	$10750_	Full	Titanium	900000	400	360000000
-Single_sample_of_genomic_DNA	454	FLX	now	$6650_	half	Titanium	450000	400	180000000
-Single_sample_of_genomic_DNA	454	FLX	now	$4000_	quarter	Titanium	180000	400	72000000
-Single_sample_of_genomic_DNA	454	FLX	now	$2000_	eighth	Titanium	100000	400	40000000
-Single_sample_of_genomic_DNA	454	FLX	now	$1000_	spike-in	Titanium	10000	400	4000000
-Single_sample_other_than_genomic_or_multi-MID_genomic	454	FLX	now	$10750_	Full	Titanium	800000	400	320000000
-Single_sample_other_than_genomic_or_multi-MID_genomic	454	FLX	now	$6650_	half	Titanium	400000	400	160000000
-Single_sample_other_than_genomic_or_multi-MID_genomic	454	FLX	now	$4000_	quarter	Titanium	150000	400	60000000
-Single_sample_other_than_genomic_or_multi-MID_genomic	454	FLX	now	$2000_	eighth	Titanium	75000	400	30000000
-Single_sample_other_than_genomic_or_multi-MID_genomic	454	FLX	now	$1000_	spike-in	Titanium	10000	400	4000000
-Multi-MID_with_other_than_genomic	454	FLX	now	$10750_	Full	Titanium	700000	400	280000000
-Multi-MID_with_other_than_genomic	454	FLX	now	$6650_	half	Titanium	350000	400	140000000
-Multi-MID_with_other_than_genomic	454	FLX	now	$4000_	quarter	Titanium	125000	400	50000000
-Multi-MID_with_other_than_genomic	454	FLX	now	$2000_	eighth	Titanium	50000	400	20000000
-Multi-MID_with_other_than_genomic	454	FLX	now	$1000_	spike-in	Titanium	10000	400	4000000
-Single_sample_of_genomic_DNA	454	FLX+	now	$10750_	Full	FLX+	900000	550	495000000
-Single_sample_of_genomic_DNA	454	FLX+	now	$6650_	half	FLX+	450000	550	247500000
-Single_sample_of_genomic_DNA	454	FLX+	now	$4000_	quarter	FLX+	180000	550	99000000
-Single_sample_of_genomic_DNA	454	FLX+	now	$2000_	eighth	FLX+	100000	550	55000000
-Single_sample_of_genomic_DNA	454	FLX+	now	$1000_	spike-in	FLX+	10000	550	5500000
-Single_sample_other_than_genomic_or_multi-MID_genomic	454	FLX+	now	$10750_	Full	FLX+	800000	550	440000000
-Single_sample_other_than_genomic_or_multi-MID_genomic	454	FLX+	now	$6650_	half	FLX+	400000	550	220000000
-Single_sample_other_than_genomic_or_multi-MID_genomic	454	FLX+	now	$4000_	quarter	FLX+	150000	550	82500000
-Single_sample_other_than_genomic_or_multi-MID_genomic	454	FLX+	now	$2000_	eighth	FLX+	75000	550	41250000
-Single_sample_other_than_genomic_or_multi-MID_genomic	454	FLX+	now	$1000_	spike-in	FLX+	10000	550	5500000
-Multi-MID_with_other_than_genomic	454	FLX+	now	$10750_	Full	FLX+	700000	550	385000000
-Multi-MID_with_other_than_genomic	454	FLX+	now	$6650_	half	FLX+	350000	550	192500000
-Multi-MID_with_other_than_genomic	454	FLX+	now	$4000_	quarter	FLX+	125000	550	68750000
-Multi-MID_with_other_than_genomic	454	FLX+	now	$2000_	eighth	FLX+	50000	550	27500000
-Multi-MID_with_other_than_genomic	454	FLX+	now	$1000_	spike-in	FLX+	10000	550	5500000
+Normal1	Illumina	HiSeq_2000	now	$2000_	lane	v3_PE100;_insert_=_180	150000000	180	27000000000
+Normal1	Illumina	HiSeq_2000	now	$2000_	lane	v3_PE100;_insert_= 170	150000000	200	30000000000
+Normal1	Illumina	HiSeq_2000	now	$2000_	lane	v3_PE100;_insert_=_160	150000000	160	24000000000
+Normal1	Illumina	HiSeq_2000	now	$2000_	lane	v3_PE100;_insert_>200	150000000	170	255000000000
+Normal1	Illumina	2500_fast_flow_cell	late_2012	?	run	v4_PE150;_insert_=_280	150000000	280	42000000000
+Normal1	Illumina	2500_fast_flow_cell	late_2012	?	run	v4_PE150;_insert_>300	150000000	300	45000000000
+Normal2	Illumina	MiSeq	version 1	$1000_	run	PE150;_insert_=_280	5000000	280	14000000000
+Normal2	Illumina	MiSeq	version 1	$1000_	run	PE150;_insert_>300	5000000	300	15000000000
+Normal2	Illumina	MiSeq-upgraded	version 2	$1200_	run	PE250;_insert_=_450	15000000	450	675000000000
+Normal2	Illumina	MiSeq-upgraded	version 2	$1200_	run	PE250;_insert_>500	15000000	500	75000000000
+Normal3	Ion_Torrent	314	March	$500_	run		200000	210	42000000
+Normal3	Ion_Torrent	316	March	$750_	run		1000000	210	210000000
+Normal3	Ion_Torrent	318	March	$1000_	run		5000000	120	600000000
+Normal4	Ion_Torrent	Proton-1	late_2012	$1000_	run		50000000	180	9000000000
+Normal4	Ion_Torrent	Proton-2	early_2013	$1000_	run		250000000	180	45000000000
+Normal5	minION	-	late_2012	$1000_	device		50000	20000	1000000000
+Normal5	GridION	2000	late_2012	$1000_	yield?		500000	20000	10000000000
+Normal5	GridION	8000	2013	$1000_	yield?		5000000	20000	100000000000
+Single_sample_of_genomic_DNA1	454	FLX	now	$10750_	Full	Titanium	900000	400	360000000
+Single_sample_of_genomic_DNA1	454	FLX	now	$6650_	half	Titanium	450000	400	180000000
+Single_sample_of_genomic_DNA1	454	FLX	now	$4000_	quarter	Titanium	180000	400	72000000
+Single_sample_of_genomic_DNA1	454	FLX	now	$2000_	eighth	Titanium	100000	400	40000000
+Single_sample_of_genomic_DNA1	454	FLX	now	$1000_	spike-in	Titanium	10000	400	4000000
+Single_sample_other_than_genomic_or_multi-MID_genomic1	454	FLX	now	$10750_	Full	Titanium	800000	400	320000000
+Single_sample_other_than_genomic_or_multi-MID_genomic1	454	FLX	now	$6650_	half	Titanium	400000	400	160000000
+Single_sample_other_than_genomic_or_multi-MID_genomic1	454	FLX	now	$4000_	quarter	Titanium	150000	400	60000000
+Single_sample_other_than_genomic_or_multi-MID_genomic1	454	FLX	now	$2000_	eighth	Titanium	75000	400	30000000
+Single_sample_other_than_genomic_or_multi-MID_genomic1	454	FLX	now	$1000_	spike-in	Titanium	10000	400	4000000
+Multi-MID_with_other_than_genomic1	454	FLX	now	$10750_	Full	Titanium	700000	400	280000000
+Multi-MID_with_other_than_genomic1	454	FLX	now	$6650_	half	Titanium	350000	400	140000000
+Multi-MID_with_other_than_genomic1	454	FLX	now	$4000_	quarter	Titanium	125000	400	50000000
+Multi-MID_with_other_than_genomic1	454	FLX	now	$2000_	eighth	Titanium	50000	400	20000000
+Multi-MID_with_other_than_genomic1	454	FLX	now	$1000_	spike-in	Titanium	10000	400	4000000
+Single_sample_of_genomic_DNA2	454	FLX+	now	$10750_	Full	FLX+	900000	550	495000000
+Single_sample_of_genomic_DNA2	454	FLX+	now	$6650_	half	FLX+	450000	550	2475000000
+Single_sample_of_genomic_DNA2	454	FLX+	now	$4000_	quarter	FLX+	180000	550	99000000
+Single_sample_of_genomic_DNA2	454	FLX+	now	$2000_	eighth	FLX+	100000	550	55000000
+Single_sample_of_genomic_DNA2	454	FLX+	now	$1000_	spike-in	FLX+	10000	550	55000000
+Single_sample_other_than_genomic_or_multi-MID_genomic2	454	FLX+	now	$10750_	Full	FLX+	800000	550	440000000
+Single_sample_other_than_genomic_or_multi-MID_genomic2	454	FLX+	now	$6650_	half	FLX+	400000	550	220000000
+Single_sample_other_than_genomic_or_multi-MID_genomic2	454	FLX+	now	$4000_	quarter	FLX+	150000	550	825000000
+Single_sample_other_than_genomic_or_multi-MID_genomic2	454	FLX+	now	$2000_	eighth	FLX+	75000	550	4125000000
+Single_sample_other_than_genomic_or_multi-MID_genomic2	454	FLX+	now	$1000_	spike-in	FLX+	10000	550	55000000
+Multi-MID_with_other_than_genomic2	454	FLX+	now	$10750_	Full	FLX+	700000	550	385000000
+Multi-MID_with_other_than_genomic2	454	FLX+	now	$6650_	half	FLX+	350000	550	1925000000
+Multi-MID_with_other_than_genomic2	454	FLX+	now	$4000_	quarter	FLX+	125000	550	6875000000
+Multi-MID_with_other_than_genomic2	454	FLX+	now	$2000_	eighth	FLX+	50000	550	275000000
+Multi-MID_with_other_than_genomic2	454	FLX+	now	$1000_	spike-in	FLX+	10000	550	55000000
